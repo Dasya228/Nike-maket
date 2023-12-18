@@ -324,4 +324,118 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
+.hallContainer {
+  padding: 60px 0 93px 0;
+}
+.section-container {
+  border-top: 3px solid black;
+}
+.section-container__title {
+  color: #FB0223;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.section-container__text {
+  color: #000;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.section-container__info {
+  color: #000;
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section-container__info svg {
+  margin-left: 50px;
+}
+.section-container-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-container-date span {
+  color: #D2D2D2;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-innerContainer {
+  border-top: 3px solid black;
+  display: flex;
+  align-items: center;
+  gap: 66px;
+  padding: 20px 0;
+}
+.section-innerContainer span {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+.section-innerContainer__name {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.slider-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.wrap-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 18px;
+}
+.wrap-title__text {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.innerContainer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-view {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.container-view span {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.nba-container {
+  padding-bottom: 22px;
+}
+.nba-container__text {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+}
+.nba-container__title {
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -31,14 +31,17 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
 }
-.col-6{
+
+.col-6 {
   max-width: 50%;
   padding: 0 15px;
 }
-.col-5{
-  max-width:83.34%;
+
+.col-5 {
+  max-width: 83.34%;
   padding: 15px;
 }
+
 .col-4 {
   max-width: 33.33%;
   padding: 0 41px;
@@ -190,27 +193,31 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     padding: 24px 0 30px 0;
   }
-  &__infoKobe{
+
+  &__infoKobe {
     color: #FFF;
     font-family: 'Orbitron', sans-serif;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
   }
-&__kobe{
-  font-family: 'Orbitron', sans-serif;
-  color: #FCBF05;
-  font-size: 65px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-  &__bryant{
+
+  &__kobe {
+    font-family: 'Orbitron', sans-serif;
+    color: #FCBF05;
+    font-size: 65px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &__bryant {
     font-family: 'Orbitron', sans-serif;
     color: #6021DB;
     font-size: 65px;
     font-weight: 800;
     text-transform: uppercase;
   }
+
   &-container {
     border-bottom: 3px solid white;
     padding: 10px 0;
@@ -240,6 +247,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
 
     &-text__price {
       color: #FFF;
@@ -334,39 +342,178 @@ h1, h2, h3, h4, h5, h6 {
   &-container:nth-child(3) {
     border-bottom: 3px solid #000;
   }
+
   .avatar-container {
     width: 80px;
     height: 80px;
     background: #c4c4c4;
   }
-.team{
-  border-bottom: 3px solid #0949EF;
-  margin-bottom: 40px;
 
-  &__text{
-    margin: 60px 0 24px 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: 600;
-    text-transform: uppercase;
+  .team {
+    border-bottom: 3px solid #0949EF;
+    margin-bottom: 40px;
+
+    &__text {
+      margin: 60px 0 24px 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
   }
-}
-  .redTeam{
+
+  .redTeam {
     border-bottom: 3px solid #FB0223;
     margin-bottom: 40px;
   }
-  &_span{
+
+  &_span {
     margin-top: 52px;
     display: flex;
     align-items: center;
     gap: 8px;
 
-    & span{
+    & span {
       color: #000;
-      font-family: 'Roboto',sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 19px;
       font-weight: 300;
     }
   }
 
+}
+
+.hallContainer {
+  padding: 60px 0 93px 0;
+
+  &-text {
+
+  }
+}
+
+
+.section-container {
+  border-top: 3px solid black;
+
+
+  &__title {
+    color: #FB0223;
+    font-size: 65px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: #000;
+    font-size: 65px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    color: #000;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    & svg {
+      margin-left: 50px;
+    }
+  }
+
+  &-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+      color: #D2D2D2;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.section-innerContainer {
+  border-top: 3px solid black;
+  display: flex;
+  align-items: center;
+  gap: 66px;
+  padding: 20px 0;
+
+  & span {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  &__name {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+}
+
+.slider-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.wrap-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 18px;
+
+  &__text {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+  }
+}
+
+.innerContainer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-view {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  & span {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+
+  }
+}
+
+.nba-container {
+  padding-bottom: 22px;
+
+  &__text {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+  }
+
+  &__title {
+    color: gray;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+  }
 }
