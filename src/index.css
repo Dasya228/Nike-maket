@@ -1,13 +1,327 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Orbitron", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+.col-5 {
+  max-width: 83.34%;
+  padding: 15px;
+}
+
+.col-4 {
+  max-width: 33.33%;
+  padding: 0 41px;
+}
+
+.header {
+  padding: 27px 120px;
+}
+.header-container-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header-container__button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.section {
+  padding-top: 10px;
+  padding-bottom: 90px;
+}
+.section-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  padding-bottom: 24px;
+}
+.section-left__title {
+  color: #000;
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.section-center h1 {
+  font-size: 130px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 13px;
+}
+.section-center h2 {
+  font-size: 130px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 13px;
+}
+.section-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section-right__title {
+  text-align: start;
+  padding: 24px 0;
+  border-bottom: 3px solid #000;
+  width: 557px;
+  color: #000;
+  font-family: "Orbitron", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.section-right__title span:nth-child(1) {
+  color: #0949EF;
+}
+.section-right__title span:nth-child(2) {
+  color: #FB0223;
+}
+.section-img {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.black-section {
+  padding: 60px 0 68px 0;
+  background: #000;
+}
+.black-section__text:nth-child(1) {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.black-section__text {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 450px;
+  margin: 24px 0 30px 0;
+}
+.black-section__info {
+  width: 450px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 24px 0 30px 0;
+}
+.black-section__infoKobe {
+  color: #FFF;
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.black-section__kobe {
+  font-family: "Orbitron", sans-serif;
+  color: #FCBF05;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.black-section__bryant {
+  font-family: "Orbitron", sans-serif;
+  color: #6021DB;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.black-section-container {
+  border-bottom: 3px solid white;
+  padding: 10px 0;
+}
+.black-section__collection {
+  color: #FFF;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.black-section__title {
+  color: #FB0223;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.black-section-container:nth-child(2) {
+  border-top: 3px solid #fff;
+}
+.black-section .box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.black-section .box-text__price {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+}
+.black-section .box-text__gray {
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 300;
+}
+.black-section .box img {
+  width: 100%;
+}
+.black-section-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.black-section-wrap div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.black-section-wrap div span {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.card-section {
+  padding: 60px 0 113px 0;
+}
+.card-section__text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.card-section__title {
+  padding: 10px 0;
+  color: #000;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.card-section__title span {
+  color: #0949EF;
+}
+.card-section__every {
+  padding: 10px 0;
+  color: #000;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.card-section__every span {
+  color: #FB0223;
+}
+.card-section__info {
+  color: #000;
+  width: 330px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+.card-section-container {
+  border-top: 3px solid #000;
+}
+.card-section-container:nth-child(3) {
+  border-bottom: 3px solid #000;
+}
+.card-section .avatar-container {
+  width: 80px;
+  height: 80px;
+  background: #c4c4c4;
+}
+.card-section .team {
+  border-bottom: 3px solid #0949EF;
+  margin-bottom: 40px;
+}
+.card-section .team__text {
+  margin: 60px 0 24px 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card-section .redTeam {
+  border-bottom: 3px solid #FB0223;
+  margin-bottom: 40px;
+}
+.card-section_span {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card-section_span span {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=index.css.map */
