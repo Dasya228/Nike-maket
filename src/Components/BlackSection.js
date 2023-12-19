@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import boxImg from '../image/DRTwwktVwAARX0P 1.png'
 import Group2 from '../image/Group 2.png'
+import axios from "axios";
 
 const BlackSection = () => {
+    const [data,setData]=useState([])
+    useEffect(() => {
+        axios('https://65812d0d3dfdd1b11c429081.mockapi.io/nike/nike')
+            .then(({data}) => setData(data))
+    }, []);
     return (
         <section className={'black-section'}>
             <div className={'container'}>
@@ -15,39 +21,23 @@ const BlackSection = () => {
                 </div>
                 <h3 className={'black-section__info'}>The jerseys of the best nba players of the regular seasons.</h3>
                 <div className={'row'}>
-                    <div className={'col-4'}>
-                        <div className="box">
-                            <img src={boxImg} alt={'error'}/>
-                            <div className={'box-text'}>
-                                <p className={'box-text__price'}>LeBron James Lakers City Edition</p>
-                                <p className={'box-text__gray'}>Nike NBA Swingman Jersey</p>
+                    {
+                        data.map(el=>
+                            <div className={'col-4'}>
+                                <div className="box">
+                                    <img src={el.src} alt={'error'}/>
+                                    <div className={'box-text'}>
+                                        <p className={'box-text__price'}>{el.name}</p>
+                                        <p className={'box-text__gray'}>{el.description}</p>
 
+                                    </div>
+                                    <span className={'box-text__price'}>{el.price}</span>
+                                </div>
                             </div>
-                            <span className={'box-text__price'}>$290</span>
-                        </div>
-                    </div>
-                    <div className={'col-4'}>
-                        <div className="box">
-                            <img src={boxImg} alt={'error'}/>
-                            <div className={'box-text'}>
-                                <p className={'box-text__price'}>LeBron James Lakers City Edition</p>
-                                <p className={'box-text__gray'}>Nike NBA Swingman Jersey</p>
+                        )
+                    }
 
-                            </div>
-                            <span className={'box-text__price'}>$290</span>
-                        </div>
-                    </div>
-                    <div className={'col-4'}>
-                        <div className="box">
-                            <img src={boxImg} alt={'error'}/>
-                            <div className={'box-text'}>
-                                <p className={'box-text__price'}>LeBron James Lakers City Edition</p>
-                                <p className={'box-text__gray'}>Nike NBA Swingman Jersey</p>
 
-                            </div>
-                            <span className={'box-text__price'}>$290</span>
-                        </div>
-                    </div>
                 </div>
                 <div className={'black-section-wrap'}>
                   <div>

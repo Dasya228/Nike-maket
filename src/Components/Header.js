@@ -1,11 +1,12 @@
 import React from 'react';
 import Logo from '../image/Logo.jpg';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
         <header className={'header'}>
             <div className={'container header-container-wrap'}>
-                <img src={Logo} alt={'Error'}/>
+                <Link to={'/'}><img src={Logo} alt={'Error'}/></Link>
 
                <nav className={'header-nav'}>
                    <a className={'header-nav__link'} href="#">man</a>
@@ -13,6 +14,7 @@ const Header = () => {
                    <a className={'header-nav__link'} href="#">jersey</a>
                    <a className={'header-nav__link'} href="#">teams</a>
                    <a className={'header-nav__link'} href="#">app</a>
+                   <Link className={'header-nav__link'} to={'/admin'}>Admin</Link>
                </nav>
                 <div className={'header-container'}>
                     <button className={'header-container__button'}>

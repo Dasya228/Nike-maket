@@ -1,27 +1,16 @@
 import React from 'react';
-import Header from "./Components/Header";
-import HeroSection from "./Components/HeroSection";
-import BlackSection from "./Components/BlackSection";
-import CardSection from "./Components/CardSection";
-import CobeBryant from "./Components/CobeBryant";
-import HallSection from "./Components/HallSection";
-import InnerSection from "./Components/InnerSection";
-import FooterSection from "./Components/FooterSection";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import Admin from "./Pages/Admin";
 
 const App = () => {
     return (
-        <>
-          <Header/>
-            <main>
-            <HeroSection/>
-                <BlackSection/>
-                <CardSection/>
-                <CobeBryant/>
-                <HallSection/>
-                <InnerSection/>
-            </main>
-            <FooterSection/>
-        </>
+     <BrowserRouter>
+         <Routes>
+             <Route path='/' element={<HomePage/>} />
+             <Route path='/admin' element={<Admin/>}/>
+         </Routes>
+     </BrowserRouter>
     );
 };
 

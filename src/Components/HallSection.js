@@ -38,7 +38,7 @@ const HallSection = () => {
                     <span style={{color: '#FB0223'}}>2009</span>
                     <span>2010</span>
                     <span>2011</span>
-                    <span>2012</span>
+                    <span className={'date_none'}>2012</span>
                 </div>
                 <div className={'section-container'}>
                     <div className={'slider-container'}>
